@@ -1,0 +1,7 @@
+# Ignore everything
+*
+
+# Except  
+!application.py
+!requirements.txt
+!Procfile

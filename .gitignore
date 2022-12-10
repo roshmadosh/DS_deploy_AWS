@@ -1,0 +1,8 @@
+# Elastic Beanstalk Files
+.elasticbeanstalk/
+
+
+# environment folders
+env
+.idea/
+__pycache__/
