@@ -1,16 +1,11 @@
-import pandas as pd
-from model import get_data, generate_df, generate_model
-import os
+from model import generate_model_pickle
 from classes import S3
 
 
-movies_df, ratings_df = get_data()
-df, vectorizer = generate_df(movies_df=movies_df, ratings_df=ratings_df)
-log_model = generate_model(df)
-
+vectorizer = generate_model_pickle()
 
 s3 = S3()
-s3.save(log_model)
+s3.save()
 
 # log_model = pickle.load(open(path_to_file, 'rb'))
 
