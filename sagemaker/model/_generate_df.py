@@ -23,6 +23,7 @@ def generate_df(**kwargs):
 
     # group by ratings
     df = _groupby_avg_ratings(df)
+
     # get tokenized df, vectorizer for transforming predictions
     tokens_df, vectorizer = _generate_tokens_df(pd.Series(titles).unique())
 
